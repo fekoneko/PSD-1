@@ -7,7 +7,7 @@ body {
     font-weight: 400;
     color: white;
     margin: 0;
-    min-width: 75rem;
+    min-width: 83rem;
 }
 
 b {
@@ -48,7 +48,7 @@ p {
 }
 
 section {
-    padding: 4rem;
+    padding: 5rem 4rem;
     text-align: center;
 }
 
@@ -63,11 +63,12 @@ footer {
     display: flex;
     flex-direction: column;
 
+    box-sizing: border-box;
     height: 50rem;
     opacity: 0.9;
     background: url("/img/home_header_background.jpg") 0 0 transparent;
     background-size: 120rem;
-    padding: 2.6rem 4rem;
+    padding: 2.6rem 5rem;
 
     position: relative;
 }
@@ -473,6 +474,7 @@ footer {
 }
 
 .spoiler-body img {
+    box-sizing: border-box;
     border-radius: 2px;
     width: 16.6rem;
     height: 10.3rem;
@@ -485,6 +487,7 @@ footer {
     letter-spacing: 0.03em;
     color: #061e37;
     margin: 2rem 0 0 0;
+    max-width: 31.13rem;
 }
 
 .comments {
@@ -511,9 +514,39 @@ footer {
 
 .comment-zone {
     display: flex;
+    justify-content: space-between;
     flex-direction: column;
 
     margin-left: 3rem;
+    height: 100%;
+}
+
+.arrow {
+    display: block;
+    text-align: center;
+    width: 100%;
+}
+
+.arrow img {
+    width: 1.53rem;
+    margin: 0 0 0 7.93rem;
+    transition: margin .15s linear;
+}
+
+.up {
+    padding-bottom: 2rem;
+}
+
+.down {
+    padding-top: 2rem;
+}
+
+.up:hover img {
+    margin: -.5rem 0 .5rem 7.93rem;
+}
+
+.down:hover img {
+    margin: .5rem 0 -.5rem 7.93rem;
 }
 
 .comment {
@@ -521,30 +554,31 @@ footer {
     justify-content: space-between;
     align-items: center;
 
-    max-width: 52rem;
+    margin: .5rem 0;
 }
 
 .comment img {
     width: 4.93rem;
+    margin-right: 3rem;
 }
 
 .comment div {
     box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.15);
-    max-width: 44.3rem;
+    max-width: 39.5rem;
     background-color: white;
     border-radius: 5px;
-    padding: 2rem 5rem 2rem 2rem;
+    padding: 1.5rem 5rem 1.5rem 2rem;
 }
 
 .comment strong {
     font-size: 1.2rem;
-    line-height: 1.6rem;
     font-weight: 700;
     color: #061e37;
 }
 
 .comment p {
     margin: 0;
+    line-height: 1.6rem;
 }
 
 .comment .com-text {
