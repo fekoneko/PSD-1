@@ -54,7 +54,6 @@ section {
 
 footer {
     padding: 6rem 4rem;
-    margin-top: 4rem;
     background-color: #061e37;
 }
 
@@ -155,7 +154,7 @@ footer {
     height: 21.53rem;
 
     box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.2);
-    border-radius: 5px;
+    border-radius: .3rem;
 
     background: url('img/video_background.jpg') no-repeat 0 0 transparent;
     background-size: 40.8em;
@@ -186,7 +185,7 @@ footer {
     height: 100%;
     z-index: 0;
 
-    border-radius: 5px;
+    border-radius: .3rem;
 }
 
 .home-header-video p {
@@ -208,7 +207,7 @@ footer {
 .btn {
     padding: .4rem 1.3rem;
     border: 1px solid white;
-    border-radius: 2px;
+    border-radius: .13rem;
 
     font-size: .8rem;
     line-height: 1.6rem;
@@ -218,8 +217,8 @@ footer {
     display: inline-block;
     padding: 1.5rem 3.1rem;
     margin-right: 2rem;
-    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, .15);
-    border-radius: 5px;
+    box-shadow: 0px .3rem .3rem 0px rgba(0, 0, 0, .15);
+    border-radius: .3rem;
 
     font-size: 1rem;
     line-height: 1.2;
@@ -275,7 +274,7 @@ footer {
 }
 
 .big-btn:hover {
-    box-shadow: 0px 5px 5px 3px rgba(0, 0, 0, .15);
+    box-shadow: 0px .3rem .3rem 3px rgba(0, 0, 0, .15);
 }
 
 .green:hover {
@@ -306,29 +305,31 @@ footer {
 }
 
 .section-description {
-    width: 37rem;
+    max-width: 38rem;
     font-size: 1rem;
+    line-height: 1.6rem;
     margin: 0 auto;
     color: #b0bec5;
 }
 
 .social {
-    margin: 0px -.5rem;
+    display: flex;
+    justify-content: center;
+    margin: 0px -.7rem;
 }
 
 .social img {
     height: 1.2rem;
-    padding: .4rem .5rem;
-
-    transition: opacity .15s linear;
+    padding: .4rem .7rem;
 }
 
 .social a {
-    opacity: 0.2;
+    opacity: .2;
+    transition: opacity .15s linear;
 }
 
 .social a:hover {
-    opacity: 1;
+    opacity: .6;
 }
 
 .hor-container {
@@ -421,13 +422,13 @@ footer {
 }
 
 .spoiler {
-    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.12);
-    border-radius: 5px;
+    box-shadow: 0px .13rem .3rem 0px rgba(0,0,0,0.12);
+    border-radius: .3rem;
     margin-bottom: 1rem;
 }
 
 .active-spoiler {
-    box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.1);
+    box-shadow: 0px .3rem 20px 0px rgba(0,0,0,0.1);
 }
 
 .spoiler-head {
@@ -475,7 +476,7 @@ footer {
 
 .spoiler-body img {
     box-sizing: border-box;
-    border-radius: 2px;
+    border-radius: .13rem;
     width: 16.6rem;
     height: 10.3rem;
     margin-right: 1.5rem;
@@ -563,17 +564,17 @@ footer {
 }
 
 .comment div {
-    box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.15);
+    box-shadow: 0px .3rem 10px 0px rgba(0,0,0,0.15);
     max-width: 39.5rem;
     background-color: white;
-    border-radius: 5px;
+    border-radius: .3rem;
     padding: 1.5rem 5rem 1.5rem 2rem;
 }
 
-.comment strong {
+strong {
     font-size: 1.2rem;
     font-weight: 700;
-    color: #061e37;
+    color: #061e37 !important;
 }
 
 .comment p {
@@ -588,4 +589,107 @@ footer {
     font-style: italic;
     color: #78909c;
     margin-top: 1rem;
+}
+
+.photo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+}
+
+.photo-container img {
+    width: 6.7rem;
+    opacity: .2;
+    margin: 2rem;
+}
+
+.photo-active {
+    width: 10.9rem !important;
+    opacity: 1 !important;
+}
+
+.grey-social {
+    margin-top: 1.4rem;
+}
+
+.grey-social img {
+    padding: .4rem .9rem;
+}
+
+.grey-social a {
+    opacity: 1;
+}
+
+.form-section {
+    background-color: #fafafa;
+}
+
+form {
+    margin: 2rem auto 3rem auto;
+    width: 39.9rem;
+}
+
+.form-line,
+.form-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+input {
+    box-sizing: border-box;
+    background-color: #fafafa;
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.93rem;
+    line-height: 2rem;
+    font-weight: 500;
+    color: #061e37;
+    border: none;
+    padding: .6rem 1.3rem;
+    margin-bottom: 1.5rem;
+}
+
+.form-line input {
+    width: 18.7rem;
+    border: 1px solid #061e37;
+    border-radius: .3rem;
+}
+
+textarea {
+    box-sizing: border-box;
+    background-color: #fafafa;
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.93rem;
+    line-height: 2rem;
+    font-weight: 500;
+    color: #061e37;
+    border: 1px solid #061e37;
+    border-radius: .3rem;
+    resize: none;
+    padding: 1rem 1.3rem;
+    width: 100%;
+    height: 10rem;
+    margin-bottom: 1.5rem;
+}
+
+.padding-btn {
+    padding: 1rem 3rem;;
+    color: white;
+}
+
+.form-bottom * {
+    margin: 0;
+}
+
+label {
+    color: #061e37;
+    font-size: 1rem;
+    padding-left: .6rem;
+}
+
+.form-bottom div {
+    display: flex;
+    align-items: center;
 }
