@@ -434,6 +434,10 @@ footer {
 }
 
 .spoiler-head {
+    padding: 0;
+}
+
+.spoiler-head a {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -460,7 +464,7 @@ footer {
 
 .flex img {
     width: 1.2rem;
-    padding-right: 1.5rem;
+    margin-right: 1.5rem;
 }
 
 #rss-img {
