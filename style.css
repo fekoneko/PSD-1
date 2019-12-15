@@ -215,6 +215,10 @@ footer {
     line-height: 1.6rem;
 }
 
+.btn:not(:hover) {
+    color: white;
+}
+
 .big-btn {
     display: inline-block;
     padding: 1.5rem 3.1rem;
@@ -314,23 +318,23 @@ footer {
     color: #b0bec5;
 }
 
-.social {
+.social-but {
     display: flex;
     justify-content: center;
     margin: 0px -.7rem;
 }
 
-.social img {
+.social-but img {
     height: 1.2rem;
-    padding: .4rem .7rem;
 }
 
-.social a {
+.social-but a {
+    padding: .4rem .7rem;
     opacity: .2;
     transition: opacity .15s linear;
 }
 
-.social a:hover {
+.social-but a:hover {
     opacity: .6;
 }
 
@@ -424,9 +428,15 @@ footer {
 }
 
 .spoiler {
-    box-shadow: 0px .13rem .3rem 0px rgba(0,0,0,0.12);
-    border-radius: .3rem;
-    margin-bottom: 1rem;
+    box-shadow: 0 .13rem .3rem 0px rgba(0,0,0,0.12);
+    border-radius: .3rem !;
+    margin-bottom: 1.5rem;
+    border: none;
+    transition: box-shadow .15s linear;
+}
+
+.spoiler:hover {
+    box-shadow: 0 .3rem 1.3rem 0 rgba(0,0,0,0.1);
 }
 
 .active-spoiler {
@@ -435,13 +445,16 @@ footer {
 
 .spoiler-head {
     padding: 0;
+    background-color: white;
+    border: none;
+    border-radius: 0;
 }
 
 .spoiler-head a {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1.5rem;
+    padding: 1.3rem 2rem;
 }
 
 .spoiler-head img {
@@ -647,12 +660,9 @@ strong {
     margin-top: 1.4rem;
 }
 
-.grey-social img {
-    padding: .4rem .9rem;
-}
-
 .grey-social a {
     opacity: 1;
+    padding: .4rem .9rem;
 }
 
 .form-section {
