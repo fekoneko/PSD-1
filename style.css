@@ -1,3 +1,33 @@
+.portfolio-menu {
+    display: flex;
+
+    position: fixed;
+    bottom: 0;
+    left: -200px;
+    z-index: 100;
+    transition: left .3s ease-in-out;
+}
+
+.portfolio-menu a {
+    padding: 7px 10px;
+    max-width: 2000px;
+    opacity: .4;
+    color: white;
+    font-size: 1.2rem;
+    background-color: black;
+    transition: color .15s linear,
+        opacity .15s linear;
+}
+
+.portfolio-menu a:hover {
+    color: #00ddff !important;
+    opacity: .7;
+}
+
+body:hover .portfolio-menu {
+    left: 0;
+}
+
 html {
     font-size: 12px;
 }
